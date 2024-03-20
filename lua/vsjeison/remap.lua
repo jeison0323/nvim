@@ -1,9 +1,9 @@
 vim.g.mapleader = " "
+vim.keymap.set("n", "<leader>w", ":w<CR>")
 vim.keymap.set("n", "<leader>ev", vim.cmd.Ex)
 vim.api.nvim_set_keymap('n', '<leader>ee', ':NvimTreeToggle<CR>', {noremap = true, silent = true})
 vim.keymap.set("n", "<c-h>", "<c-w>h", {noremap = true, silent = true})
-vim.keymap.set("n", "<c-h>", "<c-w>h", {noremap = true, silent = true})
-vim.keymap.set("n", "<c-h>", "<c-w>h", {noremap = true, silent = true})
+vim.keymap.set("n", "<c-l>", "<c-w>l", {noremap = true, silent = true})
 vim.keymap.set("n", "<c-j>", "<c-w>j", {noremap = true, silent = true})
 vim.keymap.set("n", "<c-k>", "<c-w>k", {noremap = true, silent = true})
 
