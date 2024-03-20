@@ -1,9 +1,20 @@
-vim.api.nvim_set_keymap('n', '<c-d>', ':ToggleTerm direction=float<CR>', {noremap = true, silent = true})
-require("toggleterm").setup{
-   float_opts = {
-    border = 'single',
-    width = 100,
-    height = 40,
-    title_pos = 'center'
-  } 
+local powershell_options = {
+  shell = vim.fn.executable "pwsh" == 1 and "pwsh" or "powershell",
+  shellcmdflag = "-NoLogo -NoProfile -ExecutionPolicy RemoteSigned -Command [Console]::InputEncoding=[Console]::OutputEncoding=[System.Text.Encoding]::UTF8;",
+  shellredir = "-RedirectStandardOutput %s -NoNewWindow -Wait",
+  shellpipe = "2>&1 | Out-File -Encoding UTF8 %s; exit $LastExitCode",
+  shellquote = "",
+  shellxquote = "",
 }
+
+for option, value in pairs(powershell_options) do
+    vim.opt[option] = value
+end
+require("toggleterm").setup{
+    open_mapping = [[<c-\>]],
+    shell = vim.o.shell,
+    close_mapping = [[<c-\>]],
+    start_in_insert = true,
+    direction = 'float'
+}
+
