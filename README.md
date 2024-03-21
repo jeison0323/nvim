@@ -57,6 +57,7 @@ This configuration uses all default mappings except the ones listed below:
 | `<leader>pf` | Opens Telescope file finder |  | Normal |
 | `<leader>ps` | Opens Telescope finder with grep command |  | Normal |
 | `<C-\>` | Open and close terminal from ToggleTerm | `:ToggleTerm` | Normal/Insert |
+| `<Tab>` | While in normal mode, switches between open buffers | `:bnext` | Normal |
 ## Windows Extra steps
 Follow this steps if you want to avoid errors when working on Windows. Better to do this prior the installation steps.
 * Install [Chocolatey](https://chocolatey.org/install)
