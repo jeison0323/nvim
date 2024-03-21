@@ -9,6 +9,8 @@ vim.keymap.set("n", "<c-k>", "<c-w>k", {noremap = true, silent = true})
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '>-2<CR>gv=gv")
 
+vim.keymap.set("n", "<c-u>", "<c-u>zz")
+vim.keymap.set("n", "<c-d>", "<c-d>zz")
 vim.keymap.set("n", "n", " nzzzv")
 vim.keymap.set("n", "N", " Nzzzv")
 
@@ -22,4 +24,4 @@ vim.keymap.set("n", "<leader>d", "\"_d")
 vim.keymap.set("v", "<leader>d", "\"_d")
 
 vim.keymap.set("n", "Q", "<nop>")
-
+vim.keymap.set("n", "<leader>gs", vim.cmd.Git);
