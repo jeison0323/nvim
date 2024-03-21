@@ -8,7 +8,7 @@ Im not an Nvim/Vim expert.
 ## Installation steps
 * Clone the git repository to your `~/.config/` (`C:\Users\YourUser\AppData\Local\` for windows)
 * Open nvim
-Lazy automatically will install all the necessary plugins for the configuration to work.
+* Lazy automatically will install all the necessary plugins for the configuration to work.
 * Restart Nvim
 ## Plugins
 Plugins used in this config and its dependencies:
