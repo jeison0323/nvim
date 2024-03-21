@@ -7,16 +7,11 @@ I did this configuration following this video from [TheVimeagen](https://www.you
 Im not an Nvim/Vim expert.
 ## Installation steps
 * Clone the git repository to your `~/.config/` (`C:\Users\YourUser\AppData\Local\` for windows)
-* Install Packer (See the installation guide here: [packer.vim](https://github.com/wbthomason/packer.nvim))
 * Open nvim
-Its possible some initial errors. You may have to do this:
-* Open `nvim/lua/user/packer.lua`
-* Execute `:so`
-* Execute `:PackerSync`
+Lazy automatically will install all the necessary plugins for the configuration to work.
 * Restart Nvim
 ## Plugins
 Plugins used in this config and its dependencies:
-* [packer](https://github.com/wbthomason/packer.nvim)
 * [plenary](https://github.com/nvim-lua/plenary.nvim)
 * [telescope](https://github.com/nvim-telescope/telescope.nvim)
 * [nvim-treesiter](https://github.com/nvim-treesitter/nvim-treesitter)
@@ -35,7 +30,6 @@ Plugins used in this config and its dependencies:
 * [cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp)
 * [LuaSnip](https://github.com/L3MON4D3/LuaSnip)
 * [indent-blankline](https://github.com/lukas-reineke/indent-blankline.nvim)
-* [catppuccin](https://github.com/catppuccin/nvim)
 * [onedark](https://github.com/navarasu/onedark.nvim)
 ## Mappings
 This configuration uses all default mappings except the ones listed below:
