@@ -5,6 +5,16 @@ lsp_zero.on_attach(function(client, bufnr)
   -- to learn the available actions
   lsp_zero.default_keymaps({buffer = bufnr})
 end)
+lsp_zero.format_on_save({
+      format_opts = {
+        async = false,
+        timeout_ms = 10000,
+      },
+      servers = {
+        ['lua_ls'] = {'lua'},
+        ['pylsp'] = {'python'},
+      }
+    })
 
 require("mason").setup({})
 require("mason-lspconfig").setup({
