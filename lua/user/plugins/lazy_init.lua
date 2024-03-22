@@ -11,20 +11,9 @@ return {
         priority = 1000
     },
     {
-        'nvim-tree/nvim-tree.lua'
-    },
-    {
         'windwp/nvim-autopairs',
         event = "InsertEnter",
         config = true
-    },
-    {
-        "nvim-tree/nvim-tree.lua",
-        version = "*",
-        lazy = false,
-        config = function()
-            require("nvim-tree").setup {}
-        end,
     },
     {
         "lukas-reineke/indent-blankline.nvim",

@@ -18,7 +18,6 @@ Plugins used in this config and its dependencies:
 * [vim-fugitive](https://github.com/tpope/vim-fugitive)
 * [nvim-web-devicons](https://github.com/nvim-tree/nvim-web-devicons)
 * [lualine](https://github.com/nvim-lualine/lualine.nvim)
-* [nvim-tree](https://github.com/nvim-tree/nvim-tree.lua)
 * [better-escape](https://github.com/max397574/better-escape.nvim)
 * [toggleterm](https://github.com/akinsho/toggleterm.nvim)
 * [nvim-autopairs](https://github.com/windwp/nvim-autopairs)
@@ -37,7 +36,7 @@ This configuration uses all default mappings except the ones listed below:
 |----------|----------|----------|----------|
 | `" "` | Leader key | `\` | Normal |
 | `<leader>w` | Write file in normal mode | `:w` | Normal |
-| `<leader>ee` | Opens Nvim-tree explorer | `:NvimTreeToggle` | Normal |
+| `<leader>ee` | Opens file explorer | `:Ex` | Normal |
 | `<c-h>` | Go to the left panel/buffer | `<c-w>h` | Normal |
 | `<c-l>` | Go to the right panel/buffer | `<c-w>l` | Normal |
 | `<c-j>` | Go to the bottom panel/buffer | `<c-w>j` | Normal |
