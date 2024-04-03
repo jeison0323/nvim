@@ -22,4 +22,7 @@ return {
             require("ibl").setup()
         end
     },
+    {
+        "mhinz/vim-signify"
+    },
 }
