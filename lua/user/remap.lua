@@ -31,3 +31,5 @@ vim.keymap.set("v", "<leader>d", "\"_d")
 
 vim.keymap.set("n", "Q", "<nop>")
 vim.keymap.set("n", "<leader>gs", vim.cmd.Git);
+
+vim.keymap.set("n", "<leader>fo", ":LspZeroFormat<CR>")

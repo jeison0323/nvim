@@ -1,20 +1,10 @@
 local lsp_zero = require('lsp-zero')
 
 lsp_zero.on_attach(function(client, bufnr)
-  -- see :help lsp-zero-keybindings
-  -- to learn the available actions
-  lsp_zero.default_keymaps({buffer = bufnr})
+    -- see :help lsp-zero-keybindings
+    -- to learn the available actions
+    lsp_zero.default_keymaps({ buffer = bufnr })
 end)
-lsp_zero.format_on_save({
-      format_opts = {
-        async = false,
-        timeout_ms = 10000,
-      },
-      servers = {
-        ['lua_ls'] = {'lua'},
-        ['pylsp'] = {'python'},
-      }
-    })
 
 require("mason").setup({})
 require("mason-lspconfig").setup({
@@ -28,7 +18,7 @@ require("mason-lspconfig").setup({
 })
 
 local cmp = require("cmp")
-cmp.setup{
+cmp.setup {
     mapping = {
         ['<CR>'] = function(fallback)
             if cmp.visible() then
@@ -37,7 +27,7 @@ cmp.setup{
                 fallback()
             end
         end,
-        ['<Tab>'] = function (fallback)
+        ['<Tab>'] = function(fallback)
             if cmp.visible() then
                 cmp.select_next_item()
             else
